@@ -1,8 +1,12 @@
-* {
+
+
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 .App-logo {
   height: 20vmin;
@@ -17,6 +21,8 @@ h1 {
   width: 1.875em; 
 }
 
+
+
 input {
   border: solid 1px #ccc;
   margin: 5px auto;
@@ -24,6 +30,7 @@ input {
   border-radius: 4px;
   font-size: 16px;
   width: 15%; 
+  outline: none;
 }
 
 button {
@@ -49,6 +56,55 @@ button {
 
 .center {
   text-align: center;
+}
+
+/*/////////////
+board styles
+/////////*/
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-box {
+  width: 30%;
+  text-align: center;
+  margin: 1em 4em;
+  border: solid 1px #ccc;
+  padding: 15px;
+}
+
+.boxes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  margin:  auto;
+  flex: 1;
+}
+
+.box {
+  background: #eeeeee;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+
+
+/*/////////////////////////////*/
+
+
+.box svg {
+  fill: red;
+  height: 50px;
+  width: 50px;
+  background-image: url('./x.svg');
 }
 
 @media (prefers-reduced-motion: no-preference) {
