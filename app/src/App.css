@@ -6,7 +6,10 @@ body{
   box-sizing: border-box;
 }
 
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .App-logo {
   height: 20vmin;
@@ -68,11 +71,23 @@ board styles
 }
 
 .player-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 30%;
   text-align: center;
   margin: 1em 4em;
   border: solid 1px #ccc;
   padding: 15px;
+  border-radius: 3px;
+}
+
+.player-box p {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: cursive;
 }
 
 .boxes {
@@ -80,7 +95,7 @@ board styles
   display: flex;
   flex-wrap: wrap;
   width: 550px;
-  margin:  auto;
+  margin: 2em auto;
   flex: 1;
 }
 
@@ -94,6 +109,28 @@ board styles
   background-position: center;
   background-size: 60%;
 }
+
+.player1.active {
+  background-color:#FFA000;
+}
+
+.player2.active {
+  background-color: #3688c3;
+}
+
+.active {
+  border: none;
+}
+
+.player-box.active svg g{
+  fill: #ffffff;
+}
+
+.player-box svg g {
+  fill: #ccc;
+}
+
+
 
 
 
