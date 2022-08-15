@@ -11,6 +11,8 @@ body{
   padding: 0;
 }
 
+
+
 .App-logo {
   height: 20vmin;
   pointer-events: none;
@@ -22,30 +24,35 @@ h1 {
   margin: .2em auto 1em auto;
   text-align: left;
   width: 1.875em; 
+  color: #61DAFB;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h2 {
+  font-size: 45px;
+  color: #fff;
+}
 
 
 input {
   border: solid 1px #ccc;
   margin: 5px auto;
-  padding: 6px;
+  padding: 10px;
   border-radius: 4px;
   font-size: 16px;
-  width: 15%; 
   outline: none;
 }
 
 button {
-  width: 15%;
+
   padding: 16px;
   margin-top: 10px;
   border-radius: 4px;
   border: none;
   outline: none;
   font-size: 16px;
-  background-color: navy;
-  color: #fff;
+  background-color: #82DAF4;
+  color: #0D0000;
 }
 
 .container {
@@ -54,7 +61,17 @@ button {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
+  background-color: #282C34;
+}
+
+.board {
+  background-color: #282C34;
+  height: 100vh;
+  background-image: url('./gray_logo.svg');
+  background-size: 150px;
+  background-position: center;
+  background-repeat: repeat;
+
 }
 
 .center {
@@ -97,6 +114,9 @@ board styles
   width: 550px;
   margin: 2em auto;
   flex: 1;
+  z-index: 10000908;
+  position: relative;
+  
 }
 
 .box {
@@ -109,40 +129,31 @@ board styles
   background-position: center;
   background-size: 60%;
 }
-
-.player1.active {
-  background-color:#FFA000;
-}
-
-.player2.active {
-  background-color: #3688c3;
-}
-
-.active {
+.player-box {
+  background-color: #ffffff;
   border: none;
 }
 
+
+
+
+
 .player-box.active svg g{
   fill: #ffffff;
+}
+
+.player1.active {
+  background: #FFA000
+}
+
+.player2.active {
+  background: #3688C3;
 }
 
 .player-box svg g {
   fill: #ccc;
 }
 
-
-
-
-
-/*/////////////////////////////*/
-
-
-.box svg {
-  fill: red;
-  height: 50px;
-  width: 50px;
-  background-image: url('./x.svg');
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
